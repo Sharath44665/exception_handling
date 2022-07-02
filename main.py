@@ -5,7 +5,7 @@ try:
     some_file = open("some_file.txt")
     my_dict={"color": "green"}
     print(my_dict["car"])
-except:
+except FileNotFoundError:
     # print("there was error")
     some_file=open("some_file.txt", "w")
     some_file.write("hello world")
