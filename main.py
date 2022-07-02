@@ -9,3 +9,5 @@ except FileNotFoundError:
     # print("there was error")
     some_file=open("some_file.txt", "w")
     some_file.write("hello world")
+except KeyError:
+    print("That key does not exist")
