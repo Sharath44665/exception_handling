@@ -4,10 +4,15 @@
 try:
     some_file = open("some_file.txt")
     my_dict={"color": "green"}
-    print(my_dict["car"])
+    print(my_dict["color"])
 except FileNotFoundError:
     # print("there was error")
     some_file=open("some_file.txt", "w")
     some_file.write("hello world")
 except KeyError as my_key:
     print(f"That {my_key} key does not exist in dictionary")
+
+else:
+    some_file=open("some_file.txt")
+    content=some_file.read()
+    print(content)
